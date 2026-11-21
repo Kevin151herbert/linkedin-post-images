@@ -1,0 +1,115 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,500&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0f1b2d;--ink:#16243a;--gold:#c9a45c;--cream:#f5efe3;--muted:#8a96a8;--red:#c0574b;--green:#4f8a6b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{width:1200px;height:1200px;background:var(--navy);font-family:Inter,sans-serif;color:var(--cream);overflow:hidden}
+  .frame{position:absolute;inset:36px;border:1.5px solid rgba(201,164,92,.45);border-radius:6px}
+  header{text-align:center;padding-top:84px}
+  .kicker{letter-spacing:.35em;font-size:17px;color:var(--gold);font-weight:600}
+  h1{font-family:'Playfair Display',serif;font-weight:800;font-size:64px;margin-top:14px;line-height:1.05}
+  h1 em{font-style:italic;font-weight:500;color:var(--gold)}
+  .cols{display:flex;gap:0;margin:54px 90px 0;position:relative}
+  .col{flex:1;text-align:center;padding:0 30px}
+  .divider{width:1px;background:linear-gradient(transparent,rgba(201,164,92,.6),transparent)}
+  .vs{position:absolute;left:50%;top:150px;transform:translateX(-50%);background:var(--navy);font-family:'Playfair Display',serif;font-style:italic;color:var(--gold);font-size:30px;padding:8px 6px}
+  .art{height:330px;display:flex;align-items:flex-end;justify-content:center}
+  .label{font-family:'Playfair Display',serif;font-size:34px;font-weight:600;margin-top:22px}
+  .stats{margin:22px auto 0;width:360px;text-align:left;font-size:19px;line-height:1.9}
+  .stats div{display:flex;justify-content:space-between;border-bottom:1px dashed rgba(245,239,227,.15)}
+  .stats span:first-child{color:var(--muted)}
+  .bad{color:var(--red);font-weight:700}
+  .good{color:var(--green);font-weight:700}
+  .status{margin-top:18px;font-size:19px;font-style:italic;color:var(--cream);opacity:.9}
+  footer{position:absolute;bottom:84px;left:0;right:0;text-align:center}
+  .quote{font-family:'Playfair Display',serif;font-size:31px;line-height:1.35;padding:0 140px}
+  .quote b{color:var(--gold);font-weight:600}
+  .sig{margin-top:22px;font-size:15px;letter-spacing:.3em;color:var(--muted)}
+</style></head>
+<body>
+<div class="frame"></div>
+<header>
+  <div class="kicker">A FIELD GUIDE TO GROWTH</div>
+  <h1>Which one is <em>sold out?</em></h1>
+</header>
+
+<div class="cols">
+  <div class="vs">vs.</div>
+  <div class="col">
+    <div class="art">
+      <svg width="260" height="320" viewBox="0 0 260 320">
+        <!-- sparkles -->
+        <g fill="#c9a45c">
+          <path d="M40 60 l6 16 16 6 -16 6 -6 16 -6 -16 -16 -6 16 -6z"/>
+          <path d="M215 40 l4 11 11 4 -11 4 -4 11 -4 -11 -11 -4 11 -4z"/>
+          <path d="M225 170 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/>
+        </g>
+        <!-- rocket body -->
+        <path d="M130 20 C170 60 180 140 172 220 L88 220 C80 140 90 60 130 20Z" fill="#e8ecf2"/>
+        <path d="M130 20 C150 45 160 80 165 120 L130 120Z" fill="#ffffff" opacity=".6"/>
+        <circle cx="130" cy="120" r="22" fill="#0f1b2d" stroke="#c9a45c" stroke-width="5"/>
+        <text x="130" y="128" text-anchor="middle" font-family="Inter" font-size="20" fill="#c9a45c">✦</text>
+        <path d="M88 170 L52 230 L90 222Z" fill="#c0574b"/>
+        <path d="M172 170 L208 230 L170 222Z" fill="#c0574b"/>
+        <rect x="100" y="220" width="60" height="14" rx="3" fill="#8a96a8"/>
+        <!-- "AI-POWERED" sticker -->
+        <rect x="86" y="160" width="88" height="22" rx="11" fill="#c9a45c"/>
+        <text x="130" y="175" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11" fill="#0f1b2d">AI-POWERED</text>
+        <!-- no flame, just a sad puff -->
+        <ellipse cx="130" cy="262" rx="26" ry="12" fill="#8a96a8" opacity=".35"/>
+        <text x="130" y="300" text-anchor="middle" font-family="Inter" font-size="15" fill="#8a96a8" font-style="italic">*pfft*</text>
+      </svg>
+    </div>
+    <div class="label">The Shiny Product</div>
+    <div class="stats">
+      <div><span>Features</span><span>47</span></div>
+      <div><span>Roadmap slides</span><span>112</span></div>
+      <div><span>Trust</span><span class="bad">0</span></div>
+    </div>
+    <div class="status">"Stuck in procurement's security review."</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="col">
+    <div class="art">
+      <svg width="300" height="320" viewBox="0 0 300 320">
+        <!-- crown -->
+        <path d="M118 70 L130 30 L150 58 L170 22 L188 58 L206 30 L216 70Z" fill="#c9a45c"/>
+        <rect x="116" y="68" width="102" height="12" rx="3" fill="#c9a45c"/>
+        <circle cx="167" cy="74" r="4" fill="#0f1b2d"/>
+        <!-- iron handle -->
+        <path d="M110 160 C110 110 150 96 220 100 C240 102 248 120 246 160" fill="none" stroke="#e8ecf2" stroke-width="20" stroke-linecap="round"/>
+        <!-- iron body -->
+        <path d="M40 250 C60 175 130 150 250 155 L262 250Z" fill="#e8ecf2"/>
+        <path d="M40 250 L262 250 L262 266 L30 266Z" fill="#8a96a8"/>
+        <circle cx="210" cy="200" r="10" fill="#c0574b"/>
+        <!-- steam -->
+        <g fill="none" stroke="#f5efe3" stroke-width="3" stroke-linecap="round" opacity=".55">
+          <path d="M70 230 c-10 -14 10 -22 0 -38"/>
+          <path d="M95 220 c-10 -14 10 -22 0 -38"/>
+        </g>
+        <!-- sold out tag -->
+        <g transform="rotate(-10 70 120)">
+          <rect x="20" y="100" width="110" height="38" rx="4" fill="#4f8a6b"/>
+          <text x="75" y="125" text-anchor="middle" font-family="Inter" font-weight="700" font-size="16" fill="#f5efe3">SOLD OUT</text>
+        </g>
+        <text x="150" y="300" text-anchor="middle" font-family="Inter" font-size="15" fill="#8a96a8" font-style="italic">*still works since 1998*</text>
+      </svg>
+    </div>
+    <div class="label">The Boring Iron</div>
+    <div class="stats">
+      <div><span>Features</span><span>1 (it gets hot)</span></div>
+      <div><span>Roadmap slides</span><span>0</span></div>
+      <div><span>Trust</span><span class="good">100</span></div>
+    </div>
+    <div class="status">"Back-ordered. Customers are waiting. Again."</div>
+  </div>
+</div>
+
+<footer>
+  <div class="quote">Buyers don't purchase features.<br>They purchase <b>proof you'll behave</b> when no one is watching.</div>
+  <div class="sig">GOVERNANCE IS A GROWTH FUNCTION</div>
+</footer>
+</body></html>

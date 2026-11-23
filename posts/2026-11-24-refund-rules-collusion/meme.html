@@ -1,0 +1,114 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,500&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0f1b2d;--ink:#16243a;--gold:#c9a45c;--cream:#f5efe3;--muted:#8a96a8;--red:#c0574b;--green:#4f8a6b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{width:1200px;height:1200px;background:var(--navy);font-family:Inter,sans-serif;color:var(--cream);overflow:hidden;position:relative}
+  .frame{position:absolute;inset:36px;border:1.5px solid rgba(201,164,92,.45);border-radius:6px}
+  header{text-align:center;padding-top:80px}
+  .kicker{letter-spacing:.35em;font-size:17px;color:var(--gold);font-weight:600}
+  h1{font-family:'Playfair Display',serif;font-weight:800;font-size:66px;margin-top:14px;line-height:1.05}
+  h1 em{font-style:italic;font-weight:500;color:var(--gold)}
+  .cols{display:flex;margin:40px 90px 0;position:relative}
+  .col{flex:1;text-align:center;padding:0 24px}
+  .divider{width:1px;background:linear-gradient(transparent,rgba(201,164,92,.6),transparent)}
+  .art{height:330px;display:flex;align-items:flex-end;justify-content:center}
+  .label{font-family:'Playfair Display',serif;font-size:34px;font-weight:600;margin-top:14px}
+  .form{margin:18px auto 0;width:370px;text-align:left;font-size:19px;line-height:1.85;background:rgba(245,239,227,.05);border:1px solid rgba(201,164,92,.3);border-radius:6px;padding:10px 18px}
+  .form .t{font-size:13px;letter-spacing:.25em;color:var(--gold);font-weight:700}
+  .form div.r{display:flex;justify-content:space-between;border-bottom:1px dashed rgba(245,239,227,.15)}
+  .form div.r:last-child{border-bottom:none}
+  .form span:first-child{color:var(--muted)}
+  .ok{color:var(--green);font-weight:700}
+  .verdict{margin:56px auto 0;text-align:center;font-size:22px;line-height:1.6}
+  .verdict b{color:var(--gold)}
+  .verdict .red{color:var(--red);font-weight:700}
+  footer{position:absolute;bottom:80px;left:0;right:0;text-align:center}
+  .quote{font-family:'Playfair Display',serif;font-size:32px;line-height:1.35;padding:0 140px}
+  .quote b{color:var(--gold);font-weight:600}
+  .sig{margin-top:20px;font-size:15px;letter-spacing:.3em;color:var(--muted)}
+</style></head>
+<body>
+<div class="frame"></div>
+<header>
+  <div class="kicker">A FIELD GUIDE TO FRAUD CLAIMS</div>
+  <h1>Spot the <em>difference.</em></h1>
+</header>
+
+<div class="cols">
+  <div class="col">
+    <div class="art">
+      <svg width="320" height="330" viewBox="0 0 320 330">
+        <!-- speech bubble -->
+        <rect x="150" y="10" width="160" height="62" rx="14" fill="#f5efe3"/>
+        <path d="M175 70 L160 96 L198 70Z" fill="#f5efe3"/>
+        <text x="230" y="49" text-anchor="middle" font-family="Inter" font-weight="700" font-size="21" fill="#0f1b2d">I was hacked!</text>
+        <!-- figure -->
+        <circle cx="130" cy="130" r="34" fill="none" stroke="#f5efe3" stroke-width="6"/>
+        <path d="M116 142 q14 -10 28 0" fill="none" stroke="#f5efe3" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="119" cy="124" r="3.5" fill="#f5efe3"/><circle cx="141" cy="124" r="3.5" fill="#f5efe3"/>
+        <path d="M113 120 l10 -5 M147 120 l-10 -5" stroke="#f5efe3" stroke-width="3" stroke-linecap="round"/>
+        <!-- tear -->
+        <path d="M117 133 q-3 8 0 11 q3 -3 0 -11z" fill="#8fb6d8"/>
+        <line x1="130" y1="164" x2="130" y2="250" stroke="#f5efe3" stroke-width="6" stroke-linecap="round"/>
+        <line x1="130" y1="250" x2="100" y2="315" stroke="#f5efe3" stroke-width="6" stroke-linecap="round"/>
+        <line x1="130" y1="250" x2="160" y2="315" stroke="#f5efe3" stroke-width="6" stroke-linecap="round"/>
+        <!-- arm holding phone up -->
+        <line x1="130" y1="190" x2="180" y2="165" stroke="#f5efe3" stroke-width="6" stroke-linecap="round"/>
+        <rect x="176" y="140" width="22" height="38" rx="4" fill="#c9a45c"/>
+        <!-- other arm hanging -->
+        <line x1="130" y1="190" x2="88" y2="232" stroke="#f5efe3" stroke-width="6" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="label">The Victim</div>
+    <div class="form">
+      <div class="t">CLAIM FORM</div>
+      <div class="r"><span>Story</span><span>"I was hacked"</span></div>
+      <div class="r"><span>Reported fast</span><span class="ok">✓</span></div>
+      <div class="r"><span>Very upset</span><span class="ok">✓</span></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="col">
+    <div class="art">
+      <svg width="320" height="330" viewBox="0 0 320 330">
+        <rect x="150" y="10" width="160" height="62" rx="14" fill="#f5efe3"/>
+        <path d="M175 70 L160 96 L198 70Z" fill="#f5efe3"/>
+        <text x="230" y="49" text-anchor="middle" font-family="Inter" font-weight="700" font-size="21" fill="#0f1b2d">I was hacked!</text>
+        <circle cx="130" cy="130" r="34" fill="none" stroke="#f5efe3" stroke-width="6"/>
+        <path d="M116 142 q14 -10 28 0" fill="none" stroke="#f5efe3" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="119" cy="124" r="3.5" fill="#f5efe3"/><circle cx="141" cy="124" r="3.5" fill="#f5efe3"/>
+        <path d="M113 120 l10 -5 M147 120 l-10 -5" stroke="#f5efe3" stroke-width="3" stroke-linecap="round"/>
+        <path d="M117 133 q-3 8 0 11 q3 -3 0 -11z" fill="#8fb6d8"/>
+        <line x1="130" y1="164" x2="130" y2="250" stroke="#f5efe3" stroke-width="6" stroke-linecap="round"/>
+        <line x1="130" y1="250" x2="100" y2="315" stroke="#f5efe3" stroke-width="6" stroke-linecap="round"/>
+        <line x1="130" y1="250" x2="160" y2="315" stroke="#f5efe3" stroke-width="6" stroke-linecap="round"/>
+        <line x1="130" y1="190" x2="180" y2="165" stroke="#f5efe3" stroke-width="6" stroke-linecap="round"/>
+        <rect x="176" y="140" width="22" height="38" rx="4" fill="#c9a45c"/>
+        <!-- arm behind back holding a money bag -->
+        <line x1="130" y1="190" x2="82" y2="236" stroke="#f5efe3" stroke-width="6" stroke-linecap="round"/>
+        <path d="M60 236 q-26 4 -24 40 q2 28 34 28 q32 0 34 -28 q2 -36 -24 -40z" fill="#c9a45c"/>
+        <path d="M60 236 l4 -12 h12 l4 12" fill="none" stroke="#c9a45c" stroke-width="5"/>
+        <text x="70" y="281" text-anchor="middle" font-family="Inter" font-weight="800" font-size="17" fill="#0f1b2d">50/50</text>
+      </svg>
+    </div>
+    <div class="label">The Accomplice</div>
+    <div class="form">
+      <div class="t">CLAIM FORM</div>
+      <div class="r"><span>Story</span><span>"I was hacked"</span></div>
+      <div class="r"><span>Reported fast</span><span class="ok">✓</span></div>
+      <div class="r"><span>Very upset</span><span class="ok">✓</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="verdict">Differences on the claim form: <b>0</b>&nbsp;&nbsp;·&nbsp;&nbsp;Differences in the device logs: <span class="red">all of them</span></div>
+
+<footer>
+  <div class="quote">A refund rule is also a price list.<br><b>Someone will read it that way.</b></div>
+  <div class="sig">EVIDENCE IS THE CONTROL</div>
+</footer>
+</body></html>

@@ -15,6 +15,6 @@ A refund rule is also a price list. Someone will read it that way.
 
 If 20 "I was scammed" claims landed tomorrow, could your team tell victims from accomplices in 14 working days?
 
-The full breakdown (and the 3 questions your board should ask before these rules go final) is in the first comment 👇
+The full breakdown (and the 3 questions your board should ask before these rules go final): https://orbitintelligence1.substack.com
 
 #Fraud #CBN #Fintech #RiskManagement #GRC

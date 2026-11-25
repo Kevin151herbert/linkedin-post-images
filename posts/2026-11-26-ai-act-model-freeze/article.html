@@ -1,0 +1,50 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Please Do Not Touch the Model</title></head><body>
+<h1>Please Do Not Touch the Model</h1>
+<h2>The AI Act's delay looks like breathing room. For credit-scoring models, it is also a grandfathering window that quietly rewards shipping fast and then refusing to improve.</h2>
+<p><i>Publishing note: use the meme image as the header image: <a href="https://raw.githubusercontent.com/Kevin151herbert/linkedin-post-images/main/posts/2026-11-26-ai-act-model-freeze/meme.png">meme.png</a></i></p>
+<hr>
+<p>When the EU agreed to push back the AI Act's high-risk rules, the reaction was close to a sigh of relief. More time to prepare. More time for the Commission to finish its guidance. Less risk of rushed, box-ticking compliance. Most of the advice that followed said the same sensible thing: don't pause your programme, use the time well.</p>
+<p>All of that is reasonable. But it reads the delay as a single, neutral event: the deadline moved, so everyone has longer. It misses how the delay interacts with another clause in the Act, and what that combination does to the behaviour of the people who build and run models.</p>
+<p>For lenders, the more interesting question isn't "how much time do we have?" It is "what does the new timeline make it rational to do with the models we already run?"</p>
+<h2>What actually changed</h2>
+<p>The Digital Omnibus on AI, Regulation (EU) 2026/1744, was published in the Official Journal on 24 July 2026 and entered into force on 27 July 2026. Among other changes, it replaced the original 2 August 2026 start date for high-risk obligations with two later dates: 2 December 2027 for stand-alone high-risk systems listed in Annex III, and 2 August 2028 for high-risk AI embedded in regulated products.</p>
+<p>Annex III includes AI systems used to evaluate the creditworthiness of individuals or establish their credit score, with an exception for systems used to detect financial fraud. So for most consumer lenders, banks and buy-now-pay-later providers operating in the EU, the relevant date is now 2 December 2027: sixteen months later than planned.</p>
+<p>Then there is Article 111(2), the transitional rule. In short, high-risk systems placed on the market or put into service before the high-risk chapter starts to apply are covered by the Act only if, from that date, they undergo significant changes in their design. (Systems intended for use by public authorities have a separate deadline of 2 August 2030.)</p>
+<p>Read those two facts together and the picture changes.</p>
+<h2>The missed angle: the delay extends the grandfathering window</h2>
+<p>Most people think the delay simply buys time to comply. The missed point is that, for any credit model already live, the delay also lengthens the period in which a model can be put on the market and stay outside the high-risk regime, for as long as nobody changes its design significantly.</p>
+<p>That creates two incentives nobody designed on purpose.</p>
+<p>🔴 <b>Ship before the line.</b> A model deployed in October 2027 and a model deployed in January 2028 may be technically identical. Legally, they can sit in different worlds. When a date carries that much weight, release calendars start bending towards it, and testing is the first thing that gets compressed.</p>
+<p>🔴 <b>Freeze after the line.</b> Once a model is grandfathered, every meaningful improvement carries a hidden cost: it may be the "significant change" that pulls the system into full high-risk obligations. A team that discovers drift, or an unfair outcome for a group of applicants, now faces a choice between fixing the model and keeping it out of scope. Where exactly "significant" begins is a question lawyers will argue about for years. That uncertainty is precisely what makes people cautious about touching anything.</p>
+<p>Picture a lender's model team in late 2027. Their scoring model went live in the summer. Monitoring shows approval rates slipping for thin-file applicants: young people, recent migrants, the self-employed. The fix is a redesign of how certain features are weighted. The data scientists want to ship it. Someone in the room asks whether the change counts as significant. Nobody can answer with certainty. The fix goes into the backlog "pending legal review". The model keeps scoring.</p>
+<p>No one in that scene broke a rule. That is the point. The regulation was written to protect the people being scored, and in this scenario its transitional clause is the reason they keep being scored badly.</p>
+<h2>Why this is a governance problem, not a legal one</h2>
+<p>Early in my career in GRC I learnt a lesson that sounds counterintuitive: don't be quick to automate a manual process you haven't done yourself. You may end up automating a problem. You only understand every step by doing it, over and over, until you can see where it breaks.</p>
+<p>A credit model is that lesson at industrial scale. It is an automated decision that thousands of people meet without ever seeing it. If the people who own it are rewarded for leaving it alone, the problem it automates becomes permanent, and it compounds quietly with every application.</p>
+<p>This is why the grandfathering question shouldn't be left to legal alone. Legal can tell you whether a change is likely to trigger obligations. Only governance can decide that the trigger is not a reason to avoid doing the right thing. A model risk committee that blocks a fix because of the paperwork it would generate has turned compliance into the risk.</p>
+<p>There's also a reputational logic. Customers, journalists and supervisors don't read Article 111. They read outcomes. "We were legally grandfathered" is a defence that works in a regulator's office and fails everywhere else.</p>
+<h2>What this means for you</h2>
+<p>🟢 <b>Decide model changes on customer outcomes first, legal triggers second.</b> Write it into your model risk policy: a fix that improves fairness or accuracy is never deferred solely because it may bring the system into scope.</p>
+<p>🟢 <b>Use the sixteen months to document what is already live.</b> Build the technical documentation, data lineage and human-oversight records for your current models now. If a fix later pulls a model into scope, you'll already be most of the way there, and the trigger stops being frightening.</p>
+<p>🟢 <b>Define "significant change" internally, in writing, before you need it.</b> Agree a working interpretation with legal and the business, and revisit it when the Commission's guidance on high-risk obligations arrives. A rule you decide in the heat of a release is a rule you will bend.</p>
+<p>❌ <b>Stop treating the deadline as a launch target.</b> If your release plan for scoring models clusters around November 2027, ask why.</p>
+<p>❌ <b>Stop pausing the AI governance programme because the date moved.</b> The obligations moved. The customers didn't.</p>
+<p>Three questions worth putting to your model risk committee this quarter:</p>
+<ul>
+<li><p><b>Inventory:</b> Which of our credit and pricing models would be grandfathered if nothing changed, and who is accountable for each one's outcomes?</p></li>
+<li><p><b>Incentives:</b> Has any model fix been delayed or descoped because of the compliance work it might trigger? How would we know?</p></li>
+<li><p><b>Readiness:</b> If a significant change were needed tomorrow, how much of the high-risk documentation do we already have?</p></li>
+</ul>
+<blockquote><p><i>If our best model fix next year were the one that brought us into scope, would we ship it?</i></p></blockquote>
+<p>Frameworks tell you what to check. They don't tell you how to think. The AI Act's timeline will reward the organisations that ask what its clauses make people do, not just what they make people file.</p>
+<p><b>Grandfathering protects the model. Nobody grandfathers the customer.</b></p>
+<h2>Sources</h2>
+<ul>
+<li><p><a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-111">European Commission AI Act Service Desk, Article 111: AI systems already placed on the market or put into service (consolidated text as at 27 July 2026)</a></p></li>
+<li><p><a href="https://www.whitecase.com/insight-alert/eu-ai-omnibus-enters-force-amending-ai-act">White &amp; Case, EU AI Omnibus enters into force, amending the AI Act</a></p></li>
+<li><p><a href="https://fpf.org/wp-content/uploads/2026/07/FPF-EU-AI-Act-Timeline-2026-R2.pdf">Future of Privacy Forum, EU AI Act Timeline (July 2026)</a></p></li>
+<li><p><a href="https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-guidelines-classification-high-risk-artificial-intelligence-systems">European Commission, Draft guidelines on the classification of high-risk AI systems (May 2026)</a></p></li>
+</ul>
+<hr>
+<p><i>If this resonated, subscribe for new pieces on governance, risk and technology twice a week, written for leaders who care about what a rule makes people do, not just what it makes them file.</i></p>
+</body></html>
